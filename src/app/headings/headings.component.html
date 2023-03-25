@@ -1,0 +1,19 @@
+<div class="container-fluid mt-5">
+    <h4 style="color: red;">CNN</h4>
+    <!-- <img class="d1" src="https://i.postimg.cc/hjLJMhZn/cnn-logo-white-on-red.jpg" alt=""> -->
+    <div class="row">
+        <div *ngFor="let i of headingDisplay" class="col-lg-3 mt-3 mb-3"> 
+
+            <div class="box">
+                <img src="{{i.urlToImage }}" width="100%">
+                <h4 class="mt-2 mb-2">{{i.title}}</h4>
+                <!-- <p>{{i.content}}</p> -->
+                <a class="btn btn-outline-primary mt-2 mb-2" href="{{i.url}}">Read more</a>
+    
+            </div>
+            
+
+        </div>
+
+    </div>
+</div>
